@@ -23,6 +23,8 @@ public class Main {
             answer = console.nextInt();
 
             switch(answer) {
+//Her tager programmet adminLoginInfo hashmappet, som bliver brugt til vores admin. Hvis man kommer igennem de to forskellige, vil man komme videre til den næste metode
+//som nok bliver en menu, hvor man kan access og ÆNDRER en vagtplan.
                 case 1:
                     System.out.println("Please enter username:");
                     String username = console.next();
@@ -35,7 +37,8 @@ public class Main {
                         }
                     }
                 break;
-
+//Her tager programmet loginInfo hashmappet, som bliver brugt til vores Staff. Hvis man kommer igennem de to forskellige, vil man komme videre til den næste metode
+//som nok bliver en menu, hvor man kan access en vagtplan.
                 case 2:
                     System.out.println("Please enter username:");
                     String staffUsername = console.next();
@@ -54,8 +57,10 @@ public class Main {
                 break;
             }
         }
+    }
+}
 
-
+//DØD KODE:: KUNNE IKKE FÅ USERNAME/PASSWORD TIL AT TJEKKE OM DET VAR ADMIN ELLER STAFF.
 /*
         if (loginInfo.containsKey(username.contains("admin"))){
             System.out.println("Please enter password");
@@ -76,5 +81,3 @@ public class Main {
                 System.out.println("HER ER DER EN METODE HVOR PERSONALET ENTER EN PERSONALE MENU");
             }
         }*/
-    }
-}
